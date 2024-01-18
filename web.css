@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1300px;
+  margin: 0 20px;
+}
+header{
+  background-color: rgb(116, 116, 226);
+}
+html, body{
+  scroll-behavior: smooth;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+nav ul{
+  display: flex;
+  gap: 20px;
+}
+nav li{
+  border-bottom: 0.3px transparent solid;
+  transition: 0.2s ease-in ;
+}
+nav li:hover{
+  border-bottom: 0.3px white solid;
+  transition: 0.2s ease-in ;
+}
+#first-section{
+  background-color: rgb(110, 110, 170);
+  max-height: 100vh;
+  padding: 40px 0;
+  border-bottom: 4px solid black;
+}
+#first-section .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Paramjeet{
+  width: 80vh;
+  height: 80vh;
+  object-fit: contain;
+}
+
+#project{
+  background-color: rgb(33, 33, 48);
+  padding-bottom: 20px;
+  border-bottom: 4px solid black;
+}
+#project h2 {
+  font-size: 60px;
+  text-align: center;
+  padding: 20px 0;
+}
+.project_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.grid_item {
+  display: grid;
+  place-items: center;
+}
+.card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 1s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.3;
+}
+.card:hover .card_content {
+  background: white;
+  color:rgb(19, 19, 57);
+  transform: translateY(0px);
+}
+.card_content {
+  padding: 20px;
+  position: relative;
+  top: -65px;
+  margin-bottom: -65px;
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+}
+footer{
+  background: rgb(13, 13, 27);
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+}
